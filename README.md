@@ -74,3 +74,11 @@ Feel free to contribute with pull requests ;)
 7. Update WP and php to latest
 8. Add vulnerable phpmyadmin?
 9. Add script to pull `access.log` and `error.log` from container
+
+
+# upgrade homapage after install 
+
+# Set them to 127.0.0.1:31337 (or whatever you prefer)
+docker compose run --rm wp-cli wp option update siteurl http://127.0.0.1:31337
+docker compose run --rm wp-cli wp option update home    http://127.0.0.1:31337
+
